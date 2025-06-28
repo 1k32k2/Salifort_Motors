@@ -19,73 +19,73 @@ Mục đích của dự án này là nhằm tìm hiểu xem tại sao nhân viê
 ## Bước 1: Quan sát dữ liệu
 Đây là một phần của dữ liệu (ảnh)
 
-1
+![A peak of data](https://github.com/1k32k2/Salifort_Motors/blob/main/image/1.jpeg)
 
 Không có ô nào không chứa dữ liệu (null) (ảnh)
 
-2
+![No null data](https://github.com/1k32k2/Salifort_Motors/blob/main/image/2.jpeg)
 
 Có 3008 dòng trùng dữ liệu với nhau (ảnh)
 
-3
+![Some duplicates data](https://github.com/1k32k2/Salifort_Motors/blob/main/image/3.jpeg)
 
 Kiểm tra dữ liệu ngoại lai bằng biểu đồ (ảnh)
 
-4
+![Check outlier with chart](https://github.com/1k32k2/Salifort_Motors/blob/main/image/4.png)
 
 Đào sâu và dữ liệu có sẵn, ta có thể thấy rằng đã có 1991 nhân viên đã nghỉ việc và 10,000 không nghỉ việc
 
-5
+![Left and working](https://github.com/1k32k2/Salifort_Motors/blob/main/image/5.jpeg)
 
 Thời gian mỗi tháng dành cho các dự án (ảnh)
 
-6
+![Time for proj](https://github.com/1k32k2/Salifort_Motors/blob/main/image/6.png)
 
 Đáng nhận thấy, số người rời đi ở 7 dự án là 145 người; chiếm tỉ lệ 100% (ảnh)
 
-7
+![All people left when work at 7 proj](https://github.com/1k32k2/Salifort_Motors/blob/main/image/7.jpeg)
 
 Số giờ trung bình trong tháng so với điểm đánh giá hiệu suất (ảnh)
 
-8
+![Hour and evaluation score](https://github.com/1k32k2/Salifort_Motors/blob/main/image/8.png)
 
 Sự hài lòng so với thâm niên (ảnh)
 
-9
+![Satisfaction by tenure](https://github.com/1k32k2/Salifort_Motors/blob/main/image/9.png)
 
 Phân bổ lương theo thâm niên (ảnh)
 
-10
+![Salary by tenure](https://github.com/1k32k2/Salifort_Motors/blob/main/image/10.png)
 
 Trung bình giờ trong tháng so với lần đánh giá cuối cùng (ảnh)
 
-11
+![Monthly hour by last evaluation](https://github.com/1k32k2/Salifort_Motors/blob/main/image/11.png)
 
 Mối quan hệ giữa giờ trung bình tháng với thăng chức (ảnh)
 
-12
+![Monthly hour by promotion](https://github.com/1k32k2/Salifort_Motors/blob/main/image/12.png)
 
-Lượng nhân viên không nghỉ/đã nghỉ giữa các phòng ban ( ảnh)
+Lượng nhân viên không nghỉ/đã nghỉ giữa các phòng ban (ảnh)
 
-13
+![Stay/left by dept](https://github.com/1k32k2/Salifort_Motors/blob/main/image/13.png)
 
 Mối tương quan giữa các hệ số (ảnh)
 
-14
+![Correlation](https://github.com/1k32k2/Salifort_Motors/blob/main/image/14.png)
 
 ## Xây dựng mô hình dự đoán Logistic Regression
 
 Mối tương quan giữa các hệ số 
 
-15
+![Heatmap of he dataset](https://github.com/1k32k2/Salifort_Motors/blob/main/image/15.png)
 
 Sau khi thực hiện huấn luyện mô hình, ta thu được Confusion Matrix sau
 
-17
+![Conf Mat](https://github.com/1k32k2/Salifort_Motors/blob/main/image/17.png)
 
 Độ chính xác của mô hình
 
-18
+![Stat of model](https://github.com/1k32k2/Salifort_Motors/blob/main/image/18.jpeg)
 
 ## Xây dựng mô hình bằng Decision Tree và Random Forest
 
@@ -93,19 +93,19 @@ Sau khi thực hiện huấn luyện mô hình, ta thu được Confusion Matrix
 
 Tìm mô hình tối ưu cho Decision Tree
 
-19
+![Best estimator](https://github.com/1k32k2/Salifort_Motors/blob/main/image/19.jpeg)
 
 Độ chính xác của Decision Tree
 
-20
+![Stat of DT](https://github.com/1k32k2/Salifort_Motors/blob/main/image/20.jpeg)
 
 Tìm mô hình tối ưu cho Random Forest
 
-21
+![Best est of RF](https://github.com/1k32k2/Salifort_Motors/blob/main/image/21.jpeg)
 
 So sánh evaluation score của tập train đối với Decision Tree và Random Forest
 
-22
+![Stat compare](https://github.com/1k32k2/Salifort_Motors/blob/main/image/22.jpeg)
 
 ### Giai đoạn 2:
 
@@ -115,28 +115,28 @@ Chúng tôi nhận thấy rằng có một số nhân viên không có đánh gi
 
 So sánh mô hình Decision Tree trước và sau
 
-23
+![DT prev and then](https://github.com/1k32k2/Salifort_Motors/blob/main/image/23.jpeg)
 
 Nhìn chung điểm số đã giảm đi chút ít, chúng tôi cho rằng điều đó là do việc cắt bớt dữ liệu. Tuy nhiên, nhìn chung thì kết quả vẫn tốt.
 
 Sau khi tiến hành train mô hình Random Forest lần 2 thì ta được bảng kết quả sau
 
-24
+![DT and RF compare](https://github.com/1k32k2/Salifort_Motors/blob/main/image/24.jpeg)
 
 Confusion matrix của Random Forest 
 
-25
+![Conf Mat of RF](https://github.com/1k32k2/Salifort_Motors/blob/main/image/25.png)
 
 
 Mô hình tree 
 
-16
+![Tree map](https://github.com/1k32k2/Salifort_Motors/blob/main/image/16.png)
 
 Độ quan trọng giữa các tham số đối với các mô hình
 
-27
+![Improtance col of DF](https://github.com/1k32k2/Salifort_Motors/blob/main/image/27.png)
 
-28
+![Improtance col of RF](https://github.com/1k32k2/Salifort_Motors/blob/main/image/28.png)
 
 ## Tổng kết
 
